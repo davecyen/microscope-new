@@ -1,0 +1,17 @@
+This is a social news app created using meteor JS, based on the book and tutotiral Discover Meteor (www.discovermeteor.com)
+
+Setup:
+
+1. Install meteor
+
+$ curl https://install.meteor.com | sh
+
+2. Install meteorite
+
+$ sudo -H npm install -g meteorite
+
+3. Start the server
+
+$ meteor
+
+4. Go to http://localhost:3000/
