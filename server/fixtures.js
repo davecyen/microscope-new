@@ -17,7 +17,8 @@ if (Posts.find().count() === 0) {
     userId: sacha._id,
     author: sacha.profile.name,
     url: 'http://sachagreif.com/introducing-telescope/',
-    submitted: now - 7 * 3600 * 1000
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 2
   });
 
   Comments.insert({
@@ -25,6 +26,7 @@ if (Posts.find().count() === 0) {
     userId: tom._id,
     author: tom.profile.name,
     submitted: now - 5 * 3600 * 1000,
+    commentsCount: 0,
     body: 'Interesting project Sacha, can I get involved?'
   });
 
@@ -33,6 +35,7 @@ if (Posts.find().count() === 0) {
     userId: sacha._id,
     author: sacha.profile.name,
     submitted: now - 3 * 3600 * 1000,
+    commentsCount: 0,
     body: 'You sure can Tom!'
   });
 
@@ -41,6 +44,7 @@ if (Posts.find().count() === 0) {
     userId: tom._id,
     author: tom.profile.name,
     url: 'http://meteor.com',
+    commentsCount: 0,
     submitted: now - 10 * 3600 * 1000
   });
 
@@ -49,6 +53,7 @@ if (Posts.find().count() === 0) {
     userId: tom._id,
     author: tom.profile.name,
     url: 'http://themeteorbook.com',
+    commentsCount: 0,
     submitted: now - 12 * 3600 * 1000
   });
 }
