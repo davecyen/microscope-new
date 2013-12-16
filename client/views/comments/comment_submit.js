@@ -1,5 +1,5 @@
 Template.commentSubmit.events({
-  'submit form' : function(e, template){
+  'submit form': function(e, template) {
     e.preventDefault();
 
     var $body = $(e.target).find('[name=body]');
@@ -9,7 +9,7 @@ Template.commentSubmit.events({
     };
 
     Meteor.call('comment', comment, function(error, commentId) {
-      if (error) {
+      if (error){
         throwError(error.reason);
       } else {
         $body.val('');
