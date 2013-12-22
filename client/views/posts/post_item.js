@@ -34,7 +34,11 @@ Template.postItem.rendered = function(){
   Meteor.defer(function() {
     instance.currentPosition = newPosition;
     // bring element back to its new original position
-    $this.css("top",  "0px");
+    $this.css("top",  "0px").removeClass("invisible");
+  } else {
+      // it's the first ever render, so hide element
+      $this.addClass("invisible");
+  }
   });
 };
 Template.postItem.events({
