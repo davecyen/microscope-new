@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a href="{{pathFor 'home'}}" class="brand">Microscope</a>
+      <a class="brand" href="{{pathFor 'home'}}">Microscope</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="{{activeRouteClass 'home' 'newPosts'}}">
@@ -16,7 +16,7 @@
             <a href="{{pathFor 'bestPosts'}}">Best</a>
           </li>
           {{#if currentUser}}
-            <li class="[[activeRouteClass 'postSubmit'}}">
+            <li class="{{activeRouteClass 'postSubmit'}}">
               <a href="{{pathFor 'postSubmit'}}">Submit Post</a>
             </li>
             <li class="dropdown">
